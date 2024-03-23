@@ -1,0 +1,73 @@
+:root{
+    --primaryColor: #68625e;
+    --lightColor: #FFEDED;
+}
+
+body{
+    background-color: #946c80;
+}
+
+.h3{
+    font-size: 43px;
+    margin: auto;
+}
+
+.background-primary{
+    background-color: var(--primaryColor);
+}
+
+.backgroundlight{
+    background-color: var(--lightColor);
+}
+
+.txtprimary{
+    color: var(--primaryColor);
+}
+.result{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h2{
+    color: lightseagreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#displayQuestion{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-success{
+    width: 200px;
+font-size: 23px;
+}
+
+
+.center{
+    display: grid;
+    width: 400px;
+    
+}
+
+
+
+#start{
+width: 200px;
+font-size: 23px;
+}
+#mainoptions{
+    display: flex !important;
+}
+#mainoptions button{
+    width: 100%  !important;
+    padding: 10px !important;
+    margin: 5px !important;
+    background-color: #DC3545 !important;
+    border: 0px !important;
+    border-radius: 20px !important;
+    color: white !important;
+    font-weight: bold !important;
+}

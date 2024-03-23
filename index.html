@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="quizdisplay" class="container">
+        <div id="quizdisplay" p-1>
+            <div class="p-3 my-3 rounded shadow d-flex justify-content-between align-item-center" style="background-color: #ffeded">
+                <h3 class="h3">Quiz app</h3>
+                <h3 class="text-end">
+                    <span class="fs-1" id="currentQuestionNumber" style="color: #146356">0</span> /
+                    <span id="totalQuestionNumber" style="color: #3fa796">10</span>
+                </h3>
+            </div>
+        </div>
+        <div class="p-2">
+            <div class="p-5 background-primary rounded-shadow">
+                <div>
+                    <h3 id="displayQuestion" class="text-white"></h3>
+                </div>
+            </div>
+            <div class="py-2">
+                <div class="container">
+                    <!-- <div class="row" id="optionParent"></div> -->
+                    <div class="row" id="mainoptions"></div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div style="display: none" id="resultDisplay">
+        <div class="container p-3 center">
+            <div class="p-3 bg-light badge text-wrap" style="color: maroon; font-family: Arial, Helvetica, sans-serif">
+                <h1 class="result">YOUR RESULT</h1>
+            </div>
+            <br />
+            <div style="margin: 20px 0; font-family: 'Courier New', Courier, monospace" class="bg-light badge text-secondary text-wrap">
+                <h2 class="h2">Your mark is <span id="percentage">100</span>%</h2>
+            </div>
+            <div class="text-center">
+                <button id="start" type="button" onclick="restartQuiz()" class="btn btn-primary mt-3">Start Quiz Again</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="app.js">
+    
+    </script>
+</body>
+</html>
